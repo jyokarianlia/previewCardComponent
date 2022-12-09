@@ -18,20 +18,33 @@ body {
   background-color: hsl(216deg, 50%, 16%);
   border-radius: 1.5rem;
   padding: 1.5rem;
+  position: relative;
+  box-sizing: border-box;
 }
 .contenedor .card .imagen {
   width: 100%;
   border-radius: 1.3rem;
   height: 19rem;
 }
-.contenedor .card .imagen:hover {
+.contenedor .card .fondoImagen {
+  position: absolute;
+  width: 85%;
+  height: 19rem;
+  top: 1.5rem;
+  border-radius: 1.3rem;
+  transition: all ease-in-out 0.3s;
+}
+.contenedor .card .fondoImagen:hover {
   cursor: pointer;
+  background-color: hsla(178deg, 100%, 50%, 0.3);
 }
 .contenedor .card h2 {
   color: hsl(0deg, 0%, 100%);
+  transition: all ease-in-out 0.3s;
 }
 .contenedor .card h2:hover {
   cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
 }
 .contenedor .card .time {
   display: flex;
@@ -39,9 +52,6 @@ body {
 }
 .contenedor .card .time .primerLabel {
   color: hsl(178deg, 100%, 50%);
-}
-.contenedor .card .time .primerLabel:hover {
-  cursor: pointer;
 }
 .contenedor .card .divide {
   height: 1px;
@@ -63,6 +73,6 @@ body {
   transition: all ease-in-out 0.3s;
 }
 .contenedor .card .footerCard span:hover {
-  color: red;
+  color: hsl(178deg, 100%, 50%);
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
