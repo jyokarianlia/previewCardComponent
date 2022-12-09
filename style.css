@@ -1,0 +1,68 @@
+/* *### Neutral      **/
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor {
+  background-color: hsl(217deg, 54%, 11%);
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  color: hsl(215deg, 51%, 70%);
+}
+.contenedor .card {
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+.contenedor .card .imagen {
+  width: 100%;
+  border-radius: 1.3rem;
+  height: 19rem;
+}
+.contenedor .card .imagen:hover {
+  cursor: pointer;
+}
+.contenedor .card h2 {
+  color: hsl(0deg, 0%, 100%);
+}
+.contenedor .card h2:hover {
+  cursor: pointer;
+}
+.contenedor .card .time {
+  display: flex;
+  justify-content: space-between;
+}
+.contenedor .card .time .primerLabel {
+  color: hsl(178deg, 100%, 50%);
+}
+.contenedor .card .time .primerLabel:hover {
+  cursor: pointer;
+}
+.contenedor .card .divide {
+  height: 1px;
+  background-color: hsl(215deg, 32%, 27%);
+  margin: 1rem 0;
+}
+.contenedor .card .footerCard {
+  display: flex;
+  align-items: center;
+}
+.contenedor .card .footerCard .avatar {
+  width: 2rem;
+  margin-right: 1rem;
+  border: 1.5px solid hsl(0deg, 0%, 100%);
+  border-radius: 2rem;
+}
+.contenedor .card .footerCard span {
+  color: hsl(0deg, 0%, 100%);
+  transition: all ease-in-out 0.3s;
+}
+.contenedor .card .footerCard span:hover {
+  color: red;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

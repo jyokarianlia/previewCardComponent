@@ -1,0 +1,77 @@
+$SoftBlue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+/* *### Neutral      **/
+$VeryDarkBlueMain : hsl(217, 54%, 11%) ;   // (main BG)
+$VeryDarkBlueCard : hsl(216, 50%, 16%) ;  // (card BG)
+$VeryDarkBlueLine : hsl(215, 32%, 27%) ;  //(line)
+$White: hsl(0, 0%, 100%) ;
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.contenedor {
+    background-color: $VeryDarkBlueMain;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    color: $SoftBlue;
+
+    .card {
+        background-color: $VeryDarkBlueCard;
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+
+        .imagen {
+            width: 100%;
+            border-radius: 1.3rem;
+            height: 19rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        h2 {
+            color: $White;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .time {
+            display: flex;
+            justify-content: space-between;
+            
+            .primerLabel {
+                color: $Cyan;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .divide {
+            height: 1px;
+            background-color: $VeryDarkBlueLine;
+            margin: 1rem 0;
+        }
+        .footerCard {
+            display: flex;
+            align-items: center;
+            .avatar {
+                width: 2rem;
+                margin-right: 1rem;
+                border: 1.5px  solid $White;
+                border-radius: 2rem;
+            }
+            span {
+                color: $White;
+                transition: all ease-in-out .3s;
+                &:hover {
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
