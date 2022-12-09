@@ -33,10 +33,20 @@ body {
   top: 1.5rem;
   border-radius: 1.3rem;
   transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor .card .fondoImagen img {
+  visibility: hidden;
+  transition: all ease-in-out 0.2s;
 }
 .contenedor .card .fondoImagen:hover {
   cursor: pointer;
   background-color: hsla(178deg, 100%, 50%, 0.3);
+}
+.contenedor .card .fondoImagen:hover img {
+  visibility: visible;
 }
 .contenedor .card h2 {
   color: hsl(0deg, 0%, 100%);

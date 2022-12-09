@@ -40,10 +40,21 @@ body {
             top: 1.5rem;
             border-radius: 1.3rem;
             transition: all ease-in-out .3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                visibility: hidden;
+                transition: all ease-in-out .2s;
+            }
             &:hover {
                 cursor: pointer;
                 background-color: $CyanAlpha;
+                img {
+                    visibility: visible;
+                }
             }
+            
         }
         h2 {
             color: $White;
