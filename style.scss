@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 $SoftBlue: hsl(215, 51%, 70%);
 $Cyan: hsl(178, 100%, 50%);
 $CyanAlpha : hsla(178, 100%, 50%, .3);
@@ -11,6 +13,8 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
 }
 .contenedor {
     background-color: $VeryDarkBlueMain;
@@ -20,6 +24,10 @@ body {
     box-sizing: border-box;
     padding: 1.5rem;
     color: $SoftBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .card {
         background-color: $VeryDarkBlueCard;
@@ -27,6 +35,8 @@ body {
         padding: 1.5rem;
         position: relative;
         box-sizing: border-box;
+        max-width: 350px;
+        max-height: 590px;
 
         .imagen {
             width: 100%;
@@ -35,8 +45,9 @@ body {
         }
         .fondoImagen {
             position: absolute;
-            width: 85%;
+            width: 100%;
             height: 19rem;
+            max-width: 302px;
             top: 1.5rem;
             border-radius: 1.3rem;
             transition: all ease-in-out .3s;
